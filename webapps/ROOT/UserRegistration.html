@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Registration Form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="UserRegistration.js"></script>
+</head>
+<body>
+	Serviceid:<input type="number" id="serviceId" value="2" name="serviceId">
+	<form method="get">
+		<fieldset id="fieldset">
+		<legend>Registration</legend>
+		Name:
+		<input type="text" name="name" id="name"><br>
+		Phone:
+		<input type="tel" pattern='\d{10}' title='Phone Number (Format: 9999999999)' name="PhoneNum" id="PhoneNum" required><br>
+		EmailId:
+		<input type="email" name="EmailId" id="EmailId"><br>
+		Password:
+		<input type="password" name="password" id="password"><br>
+		Confirm Password:
+		<input type="password" name="cpassword" id="cpassword">
+		</fieldset>
+		<input type="checkbox" id="terms" name="terms">Accept Terms&Conditions<br>
+		<input type="submit" value="Register" id="Register">
+	</form>
+</body>
+</html>

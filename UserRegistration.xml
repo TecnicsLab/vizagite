@@ -1,0 +1,7 @@
+<?xml version = "1.0"?>
+<dbConnection>
+	<serverIp>10.0.0.15</serverIp>
+	<database>teclab</database>
+	<user>root</user>
+	<password>tecnics</password>
+</dbConnection>

@@ -1,0 +1,13 @@
+<web-app>
+		<servlet>
+		<servlet-name>ServiceConfigServlet</servlet-name>
+		<servlet-class>ServiceConfigServlet</servlet-class>
+	</servlet>
+	
+<servlet-mapping>
+		<servlet-name>ServiceConfigServlet</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+	

@@ -1,0 +1,30 @@
+
+import java.io.*;
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+import Chat.ChatApplicationModel;
+//import Chat.ChatApplication;
+
+public class RegistrationServlet extends HttpServlet
+{
+	public void doGet(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException
+	{
+		response.setContentType("text/html");
+		PrintWriter printer = response.getWriter();
+		try
+		{
+			String get_id=request.getParameter("UserId");
+			String get_pwd=request.getParameter("Password");
+			String get_uname=request.getParameter("UserName");
+			ChatApplicationModel chatappmodel = new ChatApplicationModel();
+			String status= chatappmodel.registerWithChatRoomDB(get_id,get_pwd,get_uname);
+			printer.print(status);		 	
+		}
+		catch(Exception error)
+		{
+			printer.print(error);
+		}			
+	}
+}
