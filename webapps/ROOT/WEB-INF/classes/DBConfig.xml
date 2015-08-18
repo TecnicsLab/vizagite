@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataBase_Driver_Configuration>
+       <localhost>10.0.0.15</localhost>
+       <Driver>com.mysql.jdbc.Driver</Driver>
+       <localDrive>jdbc:mysql:</localDrive>
+       <UserName>vani</UserName>
+       <Password>tecnics</Password>
+       <DataBase>teclab</DataBase>
+</DataBase_Driver_Configuration>
+
+<!-- User can only edit the element values -->
+<!-- Warning: Don't disturb the tags -->
+<!-- By changing the xml element values to desired driver,
+ it will connect to both MYSQL Server and ORACLE Server -->
+
